@@ -1,0 +1,160 @@
+* {text-align: center;}
+* {text-rendering: optimizeLegibility;}
+
+body{
+    background-color: #FFF;
+    display: flex;
+    height: 100vh;
+}
+span{
+    padding: 15px;
+    display: flow-root;
+}
+section{
+    display: contents;
+}
+input{
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 2px;
+    outline: lawngreen;
+    text-align: start;
+    color: rgb(95, 99, 104 );
+}
+h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.x{
+    font-size: 13px;
+    font-weight: initial;
+    display: contents;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    display: inherit;
+    text-align: center;
+    margin: 24px 0px 8px;
+}
+.wer{
+    display: inline-flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modallogin{
+    max-width: 520px;
+    height: 600px;
+    width: 100%;
+    display: block;
+    min-height: 500px;
+}
+.inputContainer{
+    display: block;
+    width: 100%;
+    padding: 25px;
+    text-align: start;
+}
+.button{
+    margin: 25px 25px 128px;
+    width: auto;
+    text-align: end;
+    display: flex;
+    justify-content: initial;
+}
+.email{
+    justify-content: end;
+}
+.pass{
+    justify-content: space-between;
+}
+.goBtn{
+    width: auto;
+    min-width: 128px;
+    background-color: rgb(26, 115, 232);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.forgot{
+    color: rgb(26, 115, 232);
+    font-weight: 500;
+    text-align: initial;
+    margin-bottom: 44px;
+    padding: 10px 0 0 10px;
+}
+.rtyd{
+    display: contents;
+    color: rgb(26, 115, 232);
+    font-weight: 450;
+    text-align: initial;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.msg{
+    display: contents;
+    font-size: 16px;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+.err-alert{
+    display: inline-flex;
+    text-align: center;
+    color: red;
+    border: 1px solid rgb(218, 220, 224);
+    border-radius: 16px;
+    padding: 4px 10px 4px 10px;
+}
+
+#checkbox{
+    width: fit-content;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+form
+{
+    animation-name: fade;
+    animation-duration: 400ms;
+}
+.form__label{
+    top: -0.5rem;
+    font-size: 16px;
+    top: -1;
+} :focus {
+    font-size: initial;
+    border-color: rgb(26, 115, 232);
+    animation-duration: 1s;
+}
+
+@media screen and (min-width: 600px) {
+    .modallogin {
+        border: 1px solid rgb(218, 220, 224);
+        border-radius: 12px;
+        margin: 44px;
+    }
+}
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+        transform: scale(0.6);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
